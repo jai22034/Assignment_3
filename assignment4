@@ -1,0 +1,128 @@
+q1
+d1={}
+key1=input('Enter the name')
+value1=input('enter the marks')
+d1[key1]=value1
+key2=input('Enter the name')
+value2=input('enter the marks')
+d1[key2]=value2
+key3=input('Enter the name')
+value3=input('enter the marks')
+d1[key3]=value3
+key4=input('Enter the name')
+value4=input('enter the marks')
+d1[key4]=value4
+key5=input('Enter the name')
+value5=input('enter the marks')
+d1[key5]=value5
+key6=input('Enter the name')
+value6=input('enter the marks')
+d1[key6]=value6
+key7=input('Enter the name')
+value7=input('enter the marks')
+d1[key7]=value7
+key8=input('Enter the name')
+value8=input('enter the marks')
+d1[key8]=value8
+key9=input('Enter the name')
+value9=input('enter the marks')
+d1[key9]=value9
+key0=input('Enter the name')
+value0=input('enter the marks')
+d1[key0]=value0
+print(d1)
+
+q2
+
+import operator
+d1={}
+key1=input('Enter the name')
+value1=input('enter the marks')
+d1[key1]=value1
+key2=input('Enter the name')
+value2=input('enter the marks')
+d1[key2]=value2
+key3=input('Enter the name')
+value3=input('enter the marks')
+d1[key3]=value3
+key4=input('Enter the name')
+value4=input('enter the marks')
+d1[key4]=value4
+key5=input('Enter the name')
+value5=input('enter the marks')
+d1[key5]=value5
+key6=input('Enter the name')
+value6=input('enter the marks')
+d1[key6]=value6
+key7=input('Enter the name')
+value7=input('enter the marks')
+d1[key7]=value7
+key8=input('Enter the name')
+value8=input('enter the marks')
+d1[key8]=value8
+key9=input('Enter the name')
+value9=input('enter the marks')
+d1[key9]=value9
+key0=input('Enter the name')
+value0=input('enter the marks')
+d1[key0]=value0
+d1_sort=sorted(d1.items(),key=lambda d1: d1[1])
+print(d1_sort)
+
+q3
+
+t = (1,2,3,4,5,6,7,8,9,0, (1, 2, 3), [1, 2, 3])
+
+print(len(t))
+
+
+q4
+
+tuple1 = (1, 2,3,4,5,6,7,8)
+print('Max element in tuple==' + str(max(tuple1)))
+print('Min element in tuple==' + str(min(tuple1)))
+
+q5
+
+from functools import reduce
+list1 = [10, 10, 10]
+list2 = [4, 5, 5]
+result1 = reduce((lambda x, y: x * y), list1)
+result2 = reduce((lambda x, y: x * y), list2)
+print(result1)
+print(result2)
+
+q6
+
+set1=set()
+name1=input("Enter  1st elements in set")
+set1.add(name1)
+name2=input("Enter 2nd elemtent in set")
+set1.add(name2)
+name3=input("Enter 3rd elemtent in set")
+set1.add(name3)
+name4=input('enter the 4th element in set')
+set1.add(name4)
+print("The set is",set1)
+
+set2=set()
+name1=input("Enter  1st elements in set")
+set2.add(name1)
+name2=input("Enter 2nd elemtent in set")
+set2.add(name2)
+
+print("The set is",set2)
+
+'''this is q1'''
+print(set1 - set2)
+
+'''this is q3'''
+print(set1 & set2)
+
+'''this is q2'''
+
+print(set1.issubset(set2))
+
+print(set2.issubset(set1))
+
+print(set1.issuperset(set2))
